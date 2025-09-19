@@ -70,3 +70,22 @@ button {
   background-color: white;
   cursor: pointer;
 }
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-group button {
+  min-width: 110px;
+}
+
+.delete-btn:hover{
+  background-color: red;
+}
+
+.incomplete-btn {
+  background-color: #4caf50 !important;
+  color: white;
+  border: none;
+}
