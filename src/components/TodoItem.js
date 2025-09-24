@@ -18,14 +18,13 @@ export class TodoItem extends Component {
       span.style.textDecoration = "line-through";
     }
 
-    // Contenedor para los botones
     const btnGroup = document.createElement('div');
     btnGroup.className = "btn-group";
 
     const toggleBtn = document.createElement('button');
     toggleBtn.textContent = this.todo.completed ? "Mark Incomplete" : "Mark Complete";
     if (this.todo.completed) {
-      toggleBtn.classList.add('incomplete-btn'); // Agrega clase cuando está completado
+      toggleBtn.classList.add('incomplete-btn'); 
     }
     toggleBtn.onclick = (e) => {
       e.preventDefault();
